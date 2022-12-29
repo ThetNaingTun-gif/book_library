@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="shortcut icon" href="/images/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/homePage.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <h1 class="logo">UNIVERSITY</h1>
+            <ul class="nav-links">
+                <!-- <li class="active"><a href="#"></a>Home</li>
+                <li><a href="#"></a>About</li> -->
+                <li class="ctn">
+                    <a href="index.html">Next</a>
+                </li>
+            </ul>
+            <img src="../images/menu-btn.png" alt="" class="menu-btn">
+        </nav>
+       <div class="row">
+            <div class="col">
+                <div class="text-box">
+                    <p>TU</p>
+                    <h1>SITTWE</h1>
+                    <h3>Electronic Communication Engineering  Department</h3>
+                    <a href="index.html"><button type="button" class="ctn">Explore</button></a>
+                </div>
+            </div>
+                <div class="col">
+                    <div class="card card1">
+                        <!-- <h5>Western Desert</h5> -->
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                    </div>
+                    <div class="card card2">
+                        <!-- <h5>Western Desert</h5> -->
+                    </div>
+                    <div class="card card3">
+                        <!-- <h5>Western Desert</h5> -->
+                    </div>
+                    <div class="card card4">
+                        <!-- <h5>Western Desert</h5> -->
+                    </div>
+                </div>
+       </div>
+    </div>
+
+
+    <script>
+        const menuBtn=document.querySelector('.menu-btn');
+        const navlinks=document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    
+    
+</body>
+</html>

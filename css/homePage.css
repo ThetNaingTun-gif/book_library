@@ -1,0 +1,291 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    overflow-x: hidden;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), transparent),url(../images/res.jpg) ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 0 8%;
+}
+
+/* ! Css for Nav bar */
+.navbar
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: whitesmoke;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo
+{
+    /* width: 120px; */
+    cursor: pointer;
+    margin-left: 80px;
+    color: whitesmoke;
+}
+.nav-links
+{
+    display: flex;
+    align-items: center;
+    /* margin-right: 50px; */
+}
+.nav-links li
+{
+    margin: 10px 30px;
+    display: inline-block;
+    list-style-type: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+a
+{
+    color: whitesmoke;
+    text-decoration: none;
+    position: relative;
+}
+.nav-links li a:hover
+{
+    color: #000;
+}
+
+.active
+{
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.menu-btn
+{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+.ctn
+{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.row
+{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col
+{
+    flex-basis: 50%;
+}
+
+.text-box p
+{
+    font-size: 40px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.text-box h1
+{
+    font-size: 150px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back
+{
+    100%
+    {
+        background-position: 2000px 0;
+    }
+}
+.text-box h3
+{
+    font-size: 30px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+button
+{
+    width: 230px;
+    color: #000;
+    font-size: 20px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.card
+{
+    width: 270px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 18px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 25px;
+    background-image: url(../images/jessy.png);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1
+{
+    background-image: url(../images/TU.jpg);
+}
+.card2
+{
+    background-image: url(../images/tu_logo.png);
+}
+.card3
+{
+    background-image: url(../images/ec_logo.jpg);
+}
+.card4
+{
+    background-image: url(../images/jessy.png);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5
+{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    text-align: center;
+    font-size: 30px;
+}
+.card p
+{
+    text-shadow: 0 0 15px #000;
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+/* ?mobile screen */
+@media only screen and (max-width:850px)
+{
+    .menu-btn
+    {
+        display: block;
+    }
+    .navbar
+    {
+        padding: 0;
+    }
+    .logo
+    {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links
+    {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu
+    {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li
+    {
+        margin: 30px auto;
+    }
+    .row
+    {
+        display: absolute;
+        height: 100%;
+        align-items: center;
+    }
+    .text-box p
+    {
+        font-size: 50px;
+    }
+    .text-box h1
+    {
+        font-size: 70px;
+        line-height: 100px;
+        margin-left: -45px;
+    }
+    .text-box h3
+    {
+        font-size: 18px;
+    }
+    button
+    {
+        width: 150px;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    .card
+    {
+        width: 200px;
+        height: 120px;
+        margin-left: 150px;
+        margin-bottom: 5px;
+    }
+    .card p
+    {
+        display: none;
+        
+    }
+    h5
+    {
+        font-size: 20px;
+        color: #000;
+    }
+}
+
+/* !Animation */
+
+img
+{
+    transition: transform .3s ease;
+}
+img:hover
+{
+    transform: scale(1.1);
+}
+.ctn:hover
+{
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px #00000056;
+}
