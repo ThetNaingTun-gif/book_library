@@ -186,8 +186,9 @@ section{
 }
 .content-banner .first-title
 {
-    font-size: 20px;
-	font-weight: 400;
+    font-size: 25px;
+	font-weight: 700;
+    color: dark;
 	line-height: 1.2;
 	position: relative;
 	z-index: 2;

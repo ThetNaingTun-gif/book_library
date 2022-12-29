@@ -181,9 +181,10 @@ section
 }
 .content-banner .first-title
 {
-    font-size: 20px;
-	font-weight: 400;
+    font-size: 25px;
+	font-weight: 700;
 	line-height: 1.2;
+    color: dark;
 	position: relative;
 	z-index: 2;
 	margin:0px 0px 12px;
@@ -360,6 +361,7 @@ p
 {
     color: #7c7c7c;
     padding: 0px 40px;
+    font-size: 18px;
 }
 .events .ctn
 {
@@ -408,6 +410,8 @@ p
 {
     padding: 0;
     margin: 30px auto;
+    font-size: 18px;
+    text-align: justify;
 }
 .content-col .ctn
 {
